@@ -1,0 +1,40 @@
+/*footer*/
+
+.footer {
+    background-color: #e0e0e0;
+    color: #666;
+    padding: 50px 0;
+}
+
+.footer-column {
+    text-align: center;
+}
+
+.footer a {
+    font-family: "Maven Pro", sans-serif;
+    color: #666;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.logo {
+    width: auto;
+    height: 70px;
+}
+
+.footer {
+    h5 {
+        font-family: "Maven Pro", sans-serif;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    h6 {
+        font-family: "Maven Pro", sans-serif;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+}

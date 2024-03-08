@@ -1,0 +1,53 @@
+/*carousel css*/
+
+.bg-img-1 {
+    background-image: url("https://rossmanngroup.com/wp-content/uploads/2022/12/rossmann-repair-group-banner-f.jpeg");
+}
+
+.bg-img-2 {
+    background-image: url("https://rossmanngroup.com/wp-content/uploads/2020/01/macbook-water-damage-logic-board-repairs-New-York-1.jpg");
+}
+
+.bg-img-3 {
+    background-image: url("https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2023/04/estos-son-6-dispositivos-todos-esperan-apple-presente-2023-3005574.jpg?tf=3840x");
+}
+
+.carousel-image {
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2));
+    }
+}
+
+.bg-img-1::after,
+.bg-img-2::after,
+.bg-img-3::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2));
+}
+
+.carousel-caption {
+    h1 {
+        font-family: "Raleway", sans-serif;
+        font-weight: 700;
+        font-size: 60px;
+        margin-bottom: 20px;
+    }
+
+    z-index: 1;
+}

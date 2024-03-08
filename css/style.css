@@ -1,0 +1,781 @@
+/*reset*/
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&family=Poppins:wght@400;500&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&family=Poppins:wght@400;500&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;500;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+/*navbar*/
+.navbar {
+  background-color: #f6fafd;
+  height: 100px;
+}
+
+.container {
+  background-color: fafafa;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.navbar-brand img {
+  height: 70px;
+}
+
+.offcanvas {
+  width: 100px;
+}
+
+.navbar-nav .nav-link {
+  font-family: "Maven Pro", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: #64b549;
+  transition: color 0.3s ease;
+  margin-right: 20px;
+}
+
+.offcanvas-title {
+  font-family: "Maven Pro", sans-serif;
+  font-weight: 600;
+  color: black;
+}
+
+.navbar-nav .nav-link:hover {
+  color: rgb(133, 225, 91);
+  cursor: pointer;
+}
+
+.btn {
+  color: #fafafa;
+  transition: 5000ms ease;
+}
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.btn-outline-success {
+  font-family: "Maven Pro", sans-serif;
+  font-weight: 600;
+  background-color: #64b549;
+  color: white;
+  border: 1px solid;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-custom-color:hover {
+  color: #f0f0f0;
+  background-color: black;
+  transform: scale(1.1);
+}
+
+/*carousel css*/
+.bg-img-1 {
+  background-image: url("https://rossmanngroup.com/wp-content/uploads/2022/12/rossmann-repair-group-banner-f.jpeg");
+}
+
+.bg-img-2 {
+  background-image: url("https://rossmanngroup.com/wp-content/uploads/2020/01/macbook-water-damage-logic-board-repairs-New-York-1.jpg");
+}
+
+.bg-img-3 {
+  background-image: url("https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2023/04/estos-son-6-dispositivos-todos-esperan-apple-presente-2023-3005574.jpg?tf=3840x");
+}
+
+.carousel-image {
+  height: 70vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.carousel-image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2));
+}
+
+.bg-img-1::after,
+.bg-img-2::after,
+.bg-img-3::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2));
+}
+
+.carousel-caption {
+  z-index: 1;
+}
+.carousel-caption h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+/*footer*/
+.footer {
+  background-color: #e0e0e0;
+  color: #666;
+  padding: 50px 0;
+}
+
+.footer-column {
+  text-align: center;
+}
+
+.footer a {
+  font-family: "Maven Pro", sans-serif;
+  color: #666;
+  text-decoration: none;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  width: auto;
+  height: 70px;
+}
+
+.footer h5 {
+  font-family: "Maven Pro", sans-serif;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.footer h6 {
+  font-family: "Maven Pro", sans-serif;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.ct-text-block {
+  text-align: center;
+}
+
+#section-description {
+  background-color: #f6fafd;
+  text-align: center;
+}
+
+#headline {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.ct-headline h2 {
+  font-family: Raleway;
+  color: #000;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 12px;
+}
+
+#text-block {
+  color: #666;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.4;
+  font-family: maven pro;
+  margin-left: 48px;
+  margin-right: 48px;
+  margin-bottom: 48px;
+  max-width: 1900px;
+}
+
+/*cards css*/
+.card-body {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card-title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  font-size: 24px;
+  color: #333;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.card-text {
+  font-family: "Maven Pro", sans-serif;
+  font-size: 20px;
+  color: #666;
+}
+
+.card {
+  border-top-color: #64b549;
+  border-top-width: 5px;
+  border-top-style: solid;
+}
+
+/*css get in touch card*/
+#section-touch {
+  flex-direction: column;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+#touchForm h2 {
+  font-family: "Maven Pro", sans-serif;
+  font-size: 40px;
+  display: block;
+  margin-block-start: 0.83em;
+  margin-block-end: 16px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.ct-touchForm {
+  text-align: center;
+}
+
+#text-block-touch {
+  color: #666;
+  font-family: "Maven Pro", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  max-width: 480px;
+  margin-bottom: 9px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#headline-2 h2 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-top: 40px;
+  padding-left: 20px;
+}
+
+/*card team*/
+.cardTeam {
+  max-width: 1200px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-bottom: 100px;
+}
+
+/*card us*/
+.card-us {
+  max-width: 1000px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-left: 12px;
+  margin-right: 12px;
+  margin-bottom: 100px;
+}
+
+.card-body-custom-us {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-bottom: 20px;
+}
+
+/*media*/
+.media {
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-bottom: 20px;
+}
+
+.container-service {
+  min-height: 100vh;
+  width: 100%;
+}
+.container-service::after {
+  content: "";
+  background: url(https://guide-images.cdn.ifixit.com/igi/VFjyXrBQyAAwAcoe.huge);
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  opacity: 0.2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  object-fit: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  flex: 1;
+}
+
+.service-wrapper {
+  padding: 5% 8%;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.service h1 {
+  font-family: "Raleway", sans-serif;
+  color: #64b549;
+  font-size: 64px;
+  font-weight: 700;
+  margin-bottom: 60px;
+}
+.service h2 {
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+}
+.service p {
+  font-family: "Maven Pro", sans-serif;
+  font-size: 18px;
+  color: #666;
+  text-align: center;
+  margin-bottom: 60px;
+  font-weight: 600;
+}
+
+.cards-servicios {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card-servicio {
+  height: 360px;
+  width: 550px;
+  background-color: #63a44b;
+  padding: 3% 8%;
+  border-radius: 8px;
+  transition: 0.6s ease;
+  cursor: pointer;
+}
+.card-servicio i {
+  color: ffffff91;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 2rem;
+}
+.card-servicio p {
+  color: rgba(255, 255, 255, 0.568627451);
+}
+
+.card p {
+  text-align: left;
+  width: 100%;
+  margin: 20px;
+}
+
+.card-servicio:hover {
+  background: linear-gradient(90deg, #237e04, #64b549);
+  transform: translateY(-8px);
+}
+.card-servicio:hover i {
+  color: #64b549;
+}
+
+.contact h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 50px;
+  color: #64b549;
+  text-align: center;
+  font-weight: 700;
+  padding-top: 20px;
+}
+.contact p {
+  color: #666;
+  font-family: "Maven Pro", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.content::after {
+  content: "";
+  background: url(https://guide-images.cdn.ifixit.com/igi/VFjyXrBQyAAwAcoe.huge);
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  opacity: 0.2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  object-fit: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  flex: 1;
+}
+
+.contact-box {
+  margin-top: 60px;
+  margin-bottom: 40px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.col-md-7 {
+  background: #fafafa;
+  padding: 20px;
+}
+
+.col-md-5 {
+  background: #64b549;
+  padding: 20px;
+  color: white;
+}
+
+.form-control {
+  font-family: "Maven Pro", sans-serif;
+  height: 52px;
+  background: #fff;
+  color: #000;
+  font-size: 14px;
+  border-radius: 8px;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.bi {
+  font-size: 20px;
+}
+
+.d-flex p {
+  font-size: 18px;
+  padding-left: 10px;
+  margin-right: 10px;
+  font-family: "Maven Pro", sans-serif;
+}
+
+.form-label {
+  font-family: "Maven Pro", sans-serif;
+  font-size: 20px;
+}
+
+.container-map {
+  display: flex;
+  margin-right: 20px;
+  margin-bottom: 40px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.container-nosotros {
+  min-height: 100vh;
+  width: 100%;
+}
+.container-nosotros::after {
+  content: "";
+  background: url(https://guide-images.cdn.ifixit.com/igi/VFjyXrBQyAAwAcoe.huge);
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  opacity: 0.2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  object-fit: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  flex: 1;
+}
+
+.nosotros-wrapper {
+  padding: 5% 8%;
+}
+
+.nosotros {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nosotros h1 {
+  font-family: "Raleway", sans-serif;
+  color: #64b549;
+  font-size: 64px;
+  font-weight: 700;
+  margin-bottom: 60px;
+}
+.nosotros h2 {
+  font-family: "Raleway", sans-serif;
+  color: #666;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.card-nosotros h3 {
+  font-family: "Raleway";
+  font-size: 30px;
+  text-align: left;
+  color: #64b549;
+  font-weight: 700;
+  width: 100%;
+  margin: 20px;
+}
+
+.nosotros p {
+  font-family: "Maven Pro", sans-serif;
+  font-size: 18px;
+  color: #666;
+  text-align: center;
+  margin-bottom: 60px;
+  font-weight: 600;
+}
+
+.cards-nosotros {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 100px;
+}
+
+.card-nosotros {
+  height: 360px;
+  width: 630px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  padding: 0%;
+}
+.card-nosotros i {
+  color: #64b549;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-left: 15px;
+  font-size: 50px;
+}
+.card-nosotros p {
+  color: #666;
+  text-align: left;
+  width: 100%;
+  margin: 20px;
+}
+
+@media (max-width: 1730px) {
+  .cards-nosotros {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+}
+.container-store {
+  min-height: 100vh;
+  width: 100%;
+  padding-top: 40px;
+}
+
+.store-wrapper {
+  padding: 5% 2%;
+}
+
+.store {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.store-title h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+.store-title p {
+  font-family: "Maven Pro", sans-serif;
+  font-size: 24px;
+  color: #666;
+  text-align: center;
+  font-weight: 600;
+}
+
+.item h2 {
+  font-family: "Raleway", sans-serif;
+  color: #666;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.price {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  cursor: pointer;
+}
+
+.price button {
+  padding: 10px;
+  margin-left: 20px;
+}
+
+.item img {
+  width: 75%;
+  display: block;
+  margin: 0 auto;
+  transition: 0.15s ease;
+}
+
+.items img:hover {
+  transform: scale(1.05);
+}
+
+/*media-queries*/
+@media (max-width: 991px) {
+  .container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .navbar-toggler {
+    order: 1;
+    margin-right: 15px;
+    margin-left: auto;
+  }
+  .offcanvas {
+    width: 100%;
+  }
+  .d-lg-none {
+    width: 100%;
+    justify-content: center;
+  }
+}
+/*querie navbar*/
+@media (max-width: 1200px) {
+  .navbar-brand img {
+    height: 50px;
+  }
+  .offcanvas a.nav-link {
+    font-size: 15px;
+  }
+}
+@media (max-width: 470px) {
+  .navbar-brand img {
+    height: 40px;
+  }
+}
+/*querie servicios*/
+@media (max-width: 1730px) {
+  .cards-servicios {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 1200px) {
+  .cards-servicios {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 580px) {
+  .card-servicio {
+    height: 280px;
+    width: 300px;
+  }
+  .service p {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+  .service h2 {
+    font-size: 22px;
+  }
+  .service h1 {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+}
+/*querie sobre nosotros*/
+@media (max-width: 1200px) {
+  .cards-nosotros {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 580px) {
+  .card-nosotros {
+    height: 280px;
+    width: 300px;
+  }
+  .nosotros p {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+  .nosotros h3 {
+    font-size: 20px;
+  }
+  .nosotros h2 {
+    font-size: 22px;
+  }
+  .nosotros h1 {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  .nosotros i {
+    font-size: 30px;
+  }
+}
+/*querie store*/
+@media (max-width: 1200px) {
+  .items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 800px) {
+  .items {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

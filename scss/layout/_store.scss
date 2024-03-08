@@ -1,0 +1,79 @@
+//store
+
+@mixin define-container {
+    min-height: 100vh;
+    width: 100%;
+}
+
+.container-store {
+    @include define-container;
+    padding-top: 40px;
+}
+
+.store-wrapper {
+    padding: 5% 2%;
+}
+
+.store {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.store-title {
+    h1 {
+        font-family: $mainFont;
+        font-size: 60px;
+        font-weight: 700;
+        margin-top: 60px;
+        margin-bottom: 60px;
+        text-align: center;
+    }
+
+    p {
+        font-family: $secondaryFont;
+        font-size: 24px;
+        color: $greyColor;
+        text-align: center;
+        font-weight: 600;
+    }
+}
+
+.item h2 {
+    font-family: $mainFont;
+    color: $greyColor;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.price {
+    text-align: center;
+    font-family: $mainFont;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    cursor: pointer;
+}
+
+.price button {
+    padding: 10px;
+    margin-left: 20px;
+}
+
+.item img {
+    width: 75%;
+    display: block;
+    margin: 0 auto;
+    transition: 0.15s ease;
+}
+
+.items img:hover {
+    transform: scale(1.05);
+}
